@@ -4,10 +4,10 @@ pages_build_output_dir = "public"
 
 # KV namespace for cached product data
 # Create with: wrangler kv:namespace create PRODUCT_CACHE
-# Then replace placeholder_kv_id with the returned ID
-[[kv_namespaces]]
-binding = "PRODUCT_CACHE"
-id = "placeholder_kv_id"
+# Then uncomment the binding below and paste the returned ID
+# [[kv_namespaces]]
+# binding = "PRODUCT_CACHE"
+# id = "your_kv_namespace_id"
 
 # Note: Cron Triggers for Pages Functions are configured in the
 # Cloudflare dashboard (Workers & Pages → car-guy-gifts → Settings → Triggers)
