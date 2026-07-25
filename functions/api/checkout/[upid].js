@@ -41,7 +41,7 @@ export async function onRequestGet({ params, env }) {
             },
           },
           catalog: {
-            ids: [upid],
+            id: upid,
             context: { address_country: "US" },
           },
         },
@@ -64,8 +64,8 @@ export async function onRequestGet({ params, env }) {
       return new Response(`Catalog error: ${json.error.message}`, { status: 502 });
     }
 
-    // Extract checkout URL from the first available variant
-    const product = json.result?.structuredContent?.products?.[0];
+    // Extract checkout URL — get_product returns a single product object (not an array)
+    const product = json.result?.structuredContent?.product;
     const variant =
       product?.variants?.find((v) => v.availability?.available) || product?.variants?.[0];
 
