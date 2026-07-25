@@ -1,0 +1,53 @@
+# Curated gift guide queries — each one generates a static page.
+# The nightly build runs each query against the Shopify Global Catalog MCP,
+# curates results, and writes a static HTML page.
+
+guides:
+  - slug: "jeep-wrangler-gifts"
+    title: "Gifts for Jeep Wrangler Owners"
+    query: "Jeep Wrangler accessories gifts"
+    description: "Practical and fun gifts for the Jeep Wrangler owner in your life — from keychains to garage art."
+    recipient: "Jeep Wrangler owner"
+
+  - slug: "car-enthusiast-gifts-under-50"
+    title: "Car Enthusiast Gifts Under $50"
+    query: "car enthusiast gift under $50"
+    description: "Great gifts for car guys that won't break the bank — all under $50."
+    recipient: "car enthusiast"
+    price_max: 5000  # minor units
+
+  - slug: "garage-decor-gifts"
+    title: "Garage Decor & Man Cave Gifts"
+    query: "garage decor automotive wall art man cave"
+    description: "Gifts that level up a garage or man cave with automotive style."
+    recipient: "car guy with a garage"
+
+  - slug: "detailing-gifts"
+    title: "Car Detailing Gift Sets"
+    query: "car detailing kit gift set car wash"
+    description: "Everything the car enthusiast needs to keep their ride spotless."
+    recipient: "car detailing enthusiast"
+
+  - slug: "racing-gifts"
+    title: "Racing & Motorsport Gifts"
+    query: "racing motorsport gift F1 NASCAR track day"
+    description: "Gifts for the racing fan — from F1 merch to track day accessories."
+    recipient: "racing fan"
+
+  - slug: "classic-car-gifts"
+    title: "Classic Car & Restoration Gifts"
+    query: "classic car restoration gift mechanic"
+    description: "Gifts for the classic car restorer — tools, books, and vintage-style garage gear."
+    recipient: "classic car restorer"
+
+  - slug: "automotive-tools-gifts"
+    title: "Automotive Tool Gifts"
+    query: "automotive tools gift mechanic wrench socket set"
+    description: "Practical tool gifts for the car guy who loves working in the garage."
+    recipient: "DIY mechanic"
+
+  - slug: "automotive-apparel"
+    title: "Automotive Apparel & Accessories"
+    query: "car enthusiast t-shirt hoodie hat apparel automotive"
+    description: "Wear your pride — automotive-themed apparel and accessories for car guys."
+    recipient: "car enthusiast"

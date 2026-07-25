@@ -1,0 +1,16 @@
+name = "car-guy-gifts"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+# KV namespace for cached product data
+[[kv_namespaces]]
+binding = "PRODUCT_CACHE"
+id = "placeholder_kv_id"
+
+# Cron trigger for nightly build
+[triggers]
+crons = ["0 2 * * *"]
+
+[vars]
+UCP_PROFILE_URL = "https://car-guy-gifts.pages.dev/.well-known/ucp/agent-profile.json"
+SHOPIFY_CATALOG_ENDPOINT = "https://catalog.shopify.com/api/ucp/mcp"

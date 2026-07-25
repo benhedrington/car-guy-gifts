@@ -1,0 +1,23 @@
+{
+  "ucp": "2026-04-08",
+  "name": "Car Guy Gift Concierge",
+  "description": "An AI gift concierge that helps shoppers find the perfect gifts for car enthusiasts, leveraging the Shopify Global Catalog for cross-merchant product discovery.",
+  "profile_url": "https://car-guy-gifts.pages.dev/.well-known/ucp/agent-profile.json",
+  "capabilities": [
+    {
+      "capability": "dev.ucp.shopping.catalog.search",
+      "version": "2026-04-08"
+    },
+    {
+      "capability": "dev.ucp.shopping.catalog.lookup",
+      "version": "2026-04-08"
+    }
+  ],
+  "developer": {
+    "name": "Ben Hedrington",
+    "url": "https://github.com/benhedrington",
+    "email": "ben@hedrington.com"
+  },
+  "privacy_policy": "https://car-guy-gifts.pages.dev/privacy",
+  "terms_of_service": "https://car-guy-gifts.pages.dev/terms"
+}

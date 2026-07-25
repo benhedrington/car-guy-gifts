@@ -1,0 +1,21 @@
+{
+  "name": "car-guy-gifts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered gift concierge for car enthusiasts — Shopify Global Catalog MCP + Cloudflare Pages",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --compatibility-date=2024-09-23",
+    "build": "node build/nightly.js",
+    "deploy": "wrangler pages deploy public",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0",
+    "@cloudflare/workers-types": "^4.20240923.0",
+    "typescript": "^5.6.0"
+  }
+}
