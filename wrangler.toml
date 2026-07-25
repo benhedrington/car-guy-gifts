@@ -3,13 +3,15 @@ compatibility_date = "2024-09-23"
 pages_build_output_dir = "public"
 
 # KV namespace for cached product data
+# Create with: wrangler kv:namespace create PRODUCT_CACHE
+# Then replace placeholder_kv_id with the returned ID
 [[kv_namespaces]]
 binding = "PRODUCT_CACHE"
 id = "placeholder_kv_id"
 
-# Cron trigger for nightly build
-[triggers]
-crons = ["0 2 * * *"]
+# Note: Cron Triggers for Pages Functions are configured in the
+# Cloudflare dashboard (Workers & Pages → car-guy-gifts → Settings → Triggers)
+# The build cron can also be a GitHub Action scheduled workflow.
 
 [vars]
 UCP_PROFILE_URL = "https://car-guy-gifts.pages.dev/.well-known/ucp/agent-profile.json"

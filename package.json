@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "wrangler pages dev public --compatibility-date=2024-09-23",
     "build": "node build/nightly.js",
-    "deploy": "wrangler pages deploy public",
+    "deploy": "echo 'Pages auto-deploys on git push — no manual deploy needed'",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
